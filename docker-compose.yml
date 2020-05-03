@@ -8,11 +8,13 @@ services:
         restart: always
         ports:
            - '80:80'
+        expose:
+           - '80'
         logging:
-           driver: gelf
+           driver: "gelf"
            options:
                 gelf-address: "udp://172.16.0.8:12201"
-                tag: apache
+                tag: "apache"
         networks:
            infra:
                ipv4_address: 172.16.0.5   
@@ -77,6 +79,7 @@ services:
            - GRAYLOG_ROOT_PASSWORD_SHA2=8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
          #  - GRAYLOG_ROOT_PASSWORD_SHA2=091ae61f6f0a6811d21f0057f3e3a2136654118a26ed825c5e078afb
            - GRAYLOG_HTTP_EXTERNAL_URI=http://127.0.0.1:9000/
+           - GRAYLOG_ELASTICSEARCH_INDEX_PREFIX=graylog
         networks:
            infra:
                ipv4_address: 172.16.0.8
@@ -110,6 +113,8 @@ services:
            - ./prometheus/src/alert.rules:/etc/prometheus/alert.rules
         command:
            - '--config.file=/etc/prometheus/prometheus.yml'
+           - '--storage.tsdb.path=/prometheus'
+#           - '--alertmanager.url=http://alertmanager:9093'
         ports:
            - '9090:9090'
      node-exporter:
@@ -126,7 +131,7 @@ services:
         image: google/cadvisor
         ports:
 #          - "9200:8080"
-           - "9300:9300"
+           - "8080:8080"
         networks:
            infra:
                ipv4_address: 172.16.0.11
@@ -144,7 +149,7 @@ services:
         ports:
           - '9093:9093'
         volumes:
-          - ./alertmanager/config.yml/src/database:/etc/alertmanager/config.yml
+          - ./alertmanager/src/config.yml:/etc/alertmanager/config.yml
         networks:
           infra:
               ipv4_address: 172.16.0.12
