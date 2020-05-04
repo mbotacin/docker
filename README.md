@@ -43,13 +43,13 @@ Ao final deste projeto, o front-end contará com um servidor Nginx como proxy re
 
 <h2>CONTAINERS:</h2>
 <h3>APACHE</h3>
-    Exposição de portas
+    Exposição de portas<br>
     80
 
 <h3>DB - MySQL</h3>
-    Exposição de porta
-    3306
-    Banco de Dados
+    Exposição de porta<br>
+    3306<br>
+    Banco de Dados<br>
     comentarios
 
 <h3>Mongo</h3>
@@ -60,18 +60,18 @@ Ao final deste projeto, o front-end contará com um servidor Nginx como proxy re
 	Syslog UDP/TCP 1514<br>
 	Gelf UDP/TCP 12201
 <h3>Prometheus</h2>
-	Exposição de porta
+	Exposição de porta<br>
     	9090
 
 <h3>Node-exporter</h3>
-	Exposição de porta
+	Exposição de porta<br>
 	9100
 <h3>Cadvisor-exporter</h3>
-	Exposição de porta
+	Exposição de porta<br>
 	8080
 <h3>Alertmanager</h3>
 <h3>Grafana</h3>
-	Exposição de porta
+	Exposição de porta<br>
     	3000
 	
 <h2>Containers que ainda serão inclusos no projeto:</h2>
