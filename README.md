@@ -55,9 +55,9 @@ Ao final deste projeto, o front-end contará com um servidor Nginx como proxy re
 <h3>Mongo</h3>
 <h3>Elasticsearch</h3>
 <h3>Graylog</h3>
-	Exposição de portas
-	Web 9000
-	Syslog UDP/TCP 1514
+	Exposição de portas<br>
+	Web 9000<br>
+	Syslog UDP/TCP 1514<br>
 	Gelf UDP/TCP 12201
 <h3>Prometheus</h2>
 	Exposição de porta
