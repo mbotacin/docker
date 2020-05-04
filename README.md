@@ -41,43 +41,41 @@ Ao final deste projeto, o front-end contará com um servidor Nginx como proxy re
     ##cAdvisor
     http://localhost:8080
 
-CONTAINERS :
-APACHE
+<h2>CONTAINERS:</h2>
+<h3>APACHE</h3>
     Exposição de portas
     80
 
-DB - MySQL
+<h3>DB - MySQL</h3>
     Exposição de porta
     3306
     Banco de Dados
     comentarios
 
-Mongo
-Elasticsearch
-Graylog
-
-1.Exposição de portas
+<h3>Mongo</h3>
+<h3>Elasticsearch</h3>
+<h3>Graylog</h3>
+	Exposição de portas
 	Web 9000
 	Syslog UDP/TCP 1514
 	Gelf UDP/TCP 12201
-	Prometheus
-Exposição de porta
-    9090
+<h3>Prometheus</h2>
+	Exposição de porta
+    	9090
 
-Node-exporter
-
-1.Exposição de porta
+<h3>Node-exporter</h3>
+	Exposição de porta
 	9100
-Cadvisor-exporter
-
-1.Exposição de porta
+<h3>Cadvisor-exporter</h3>
+	Exposição de porta
 	8080
-Alertmanager
-Grafana
-Exposição de porta
-    3000
-    #Containers que ainda serão inclusos no projeto:
+<h3>Alertmanager</h3>
+<h3>Grafana</h3>
+	Exposição de porta
+    	3000
+	
+<h2>Containers que ainda serão inclusos no projeto:</h2>
 
-Nginx
-Apache2
-Apache3
+<h3>Nginx</h3>
+<h3>Apache2</h3>
+<h3>Apache3</h3>
