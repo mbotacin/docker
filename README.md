@@ -9,7 +9,8 @@ Ao final deste projeto, o front-end contará com um servidor Nginx como proxy re
 <li>Efetuar o Download do Projeto através do GIT<br>
     Escolha um diretorio onde o Projeto sera copiado, após acessar o diretorio executar o seguinte na linha de comando:<br>
     #git clone https://github.com/mbotacin/docker.git<br>
-<li>Acessar o diretorio docker que acabou de ser criado ao executar o comando acima.
+<li>Acessar o diretorio docker que acabou de ser criado ao executar o comando acima.<br>
+    cd docker/
 <li>Dar permissao 777 no diretorio grafana/src/data<br>
     Acessar o diretorio grafana/src, apos digitar o comando:<br>
     #chmod 777 data<br>
