@@ -1,16 +1,16 @@
-DESCRIÇÃO
+<h1>DESCRIÇÃO</h1>
 
 "Docker utilizando o compose, para hospedar uma aplicação web quer receberá nome, e-mail e comentários. Esta aplicação será disponibilizada para uma grande quantidade de clientes, sendo necessário garantir que o ambiente seja escalável e altamente disponível".
-#PROJETO FINAL
+
+<h2>#PROJETO FINAL</h2>
 Ao final deste projeto, o front-end contará com um servidor Nginx como proxy reverso e também 3 servidores apache para alta disponibilidade.
 
-#PASSOS PARA INICIAR O PROJETO:
-
-    Efetuar o Download do Projeto através do GIT
+<h2>#PASSOS PARA INICIAR O PROJETO:</h2
+	<li>Efetuar o Download do Projeto através do GIT
     Escolha um diretorio onde o Projeto sera copiado, após acessar o diretorio executar o seguinte na linha de comando:
-    #git clone https://github.com/mbotacin/docker.git
-    Acessar o diretorio docker que acabou de ser criado ao executar o comando acima.
-    3 Dar permissao 777 no diretorio grafana/src/data
+    #git clone https://github.com/mbotacin/docker.git<li>
+    <li>Acessar o diretorio docker que acabou de ser criado ao executar o comando acima.<li>
+    3. Dar permissao 777 no diretorio grafana/src/data
     Acessar o diretorio grafana/src, apos digitar o comando:
     #chmod 777 data
     Verificar se possui o docker-compose instalado:
@@ -43,12 +43,10 @@ Ao final deste projeto, o front-end contará com um servidor Nginx como proxy re
 
 CONTAINERS :
 APACHE
-
     Exposição de portas
     80
 
 DB - MySQL
-
     Exposição de porta
     3306
     Banco de Dados
@@ -59,26 +57,24 @@ Elasticsearch
 Graylog
 
 1.Exposição de portas
-Web 9000
-Syslog UDP/TCP 1514
-Gelf UDP/TCP 12201
-Prometheus
-
-    Exposição de porta
+	Web 9000
+	Syslog UDP/TCP 1514
+	Gelf UDP/TCP 12201
+	Prometheus
+Exposição de porta
     9090
 
 Node-exporter
 
 1.Exposição de porta
-9100
+	9100
 Cadvisor-exporter
 
 1.Exposição de porta
-8080
+	8080
 Alertmanager
 Grafana
-
-    Exposição de porta
+Exposição de porta
     3000
     #Containers que ainda serão inclusos no projeto:
 
