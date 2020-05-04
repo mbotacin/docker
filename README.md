@@ -5,15 +5,15 @@
 <h2>#PROJETO FINAL</h2>
 Ao final deste projeto, o front-end contará com um servidor Nginx como proxy reverso e também 3 servidores apache para alta disponibilidade.
 
-<h2>#PASSOS PARA INICIAR O PROJETO:</h2
-	<li>Efetuar o Download do Projeto através do GIT
+<h2>#PASSOS PARA INICIAR O PROJETO:</h2>
+<li>Efetuar o Download do Projeto através do GIT
     Escolha um diretorio onde o Projeto sera copiado, após acessar o diretorio executar o seguinte na linha de comando:
-    #git clone https://github.com/mbotacin/docker.git<li>
-    <li>Acessar o diretorio docker que acabou de ser criado ao executar o comando acima.<li>
-    3. Dar permissao 777 no diretorio grafana/src/data
+    #git clone https://github.com/mbotacin/docker.git
+<li>Acessar o diretorio docker que acabou de ser criado ao executar o comando acima.
+<li>Dar permissao 777 no diretorio grafana/src/data
     Acessar o diretorio grafana/src, apos digitar o comando:
     #chmod 777 data
-    Verificar se possui o docker-compose instalado:
+<li>Verificar se possui o docker-compose instalado:
     #docker-compose --version
     Caso nao possua o docker-compose instalado, executar os passos:
     #curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -23,9 +23,9 @@ Ao final deste projeto, o front-end contará com um servidor Nginx como proxy re
     #ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
     em seguida verificar novamente
     #docker-compose --version
-    Executar:
+<li>Executar:
     #docker-compose up
-    6.Apos efetuar todos os downloads das imagens, poderao ser acessados os serviços através dos endereços:
+<li>Apos efetuar todos os downloads das imagens, poderao ser acessados os serviços através dos endereços:
     ##Aplicação de Comentarios
     http://localhost
     ##Graylog
